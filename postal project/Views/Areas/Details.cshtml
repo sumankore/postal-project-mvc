@@ -1,0 +1,50 @@
+﻿@model postal_project.Models.Areas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Areas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pincode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pincode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CityID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CityID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isactive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isactive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AreaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

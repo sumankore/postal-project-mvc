@@ -1,0 +1,15 @@
+﻿@model postal_project.Models.cascadingclass
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Postal Pincodes</h2>
+Select country:
+@if(ViewBag.CountryList != null)
+{
+                @Html.DropDownListFor(m=>m.CountryID, ViewBag.CountryList as SelectList,"select country",new { @class="form-control"})
+
+            }
+
+
+
